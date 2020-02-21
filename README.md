@@ -9,7 +9,7 @@ I modified the function name to be distiguished from the file name. And used dif
 
 ### Example usage
 
-`PS 
-  PS C:\> . "full-path-to-the-file\Grant-UserFullRights.ps1"
+`PowerShell 
+  PS C:\> . "full-path-to-the-file\Grant-UserFullRights.ps1"  
   PS C:\> Grant-UserFullControl -Files .\filename -Username "domain\username"  
 `
