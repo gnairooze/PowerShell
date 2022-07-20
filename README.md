@@ -1,4 +1,5 @@
 # PowerShell
+
 PowerShell Scripts
 
 ## Grant-UserFullRights.ps1
@@ -9,7 +10,7 @@ I modified the function name to be distiguished from the file name. And used dif
 
 ### Example usage
 
-```powershell 
+```powershell
 . "full-path-to-the-file\Grant-UserFullRights.ps1"  
 Grant-UserFullControl -Files .\filename -Username "domain\username"  
 ```
@@ -20,7 +21,7 @@ This script extract data from XML files and add it to CSV file.
 
 ### Example Usage
 
-```powershell 
+```powershell
 . "full-path-to-the-file\extract-from-xml-2-csv.ps1"
 Extract-Data -sourcePath "c:\Users\George\Downloads\1\" -outputFile "c:\Users\George\Downloads\1\exracted-data.csv"
 ```
