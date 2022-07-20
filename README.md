@@ -23,5 +23,5 @@ This script extract data from XML files and add it to CSV file.
 
 ```powershell
 . "full-path-to-the-file\extract-from-xml-2-csv.ps1"
-Extract-Data -sourcePath "c:\Users\George\Downloads\1\" -outputFile "c:\Users\George\Downloads\1\exracted-data.csv"
+Read-Data -sourcePath "c:\Users\George\Downloads\1\" -outputFile "c:\Users\George\Downloads\1\exracted-data.csv"
 ```

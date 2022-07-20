@@ -1,4 +1,4 @@
-function Extract-Data {
+function Read-Data {
     [cmdletbinding()]            
     param(            
     [Parameter(Mandatory=$true)]            
@@ -18,23 +18,22 @@ function Extract-Data {
     $xmlFiles = [System.Collections.ArrayList]@()
 
     (Get-ChildItem -Path $sourcePath -Include *.xml -Recurse).FullName | Foreach-Object{
-        $xmlFiles.Add($_)
+        # null variable used to hide output to host
+        $xmlFiles.Add($_) >$null
     }
 
 
     # loop over xml files
     foreach ($xmlFile in $xmlFiles){
-        # Write-Host $xmlFile
-
         # read xml file
         [xml]$data=Get-Content $xmlFile
 
         # read the required fields from xml
         $var =  [PSCustomObject]@{CreatededDate = $data.InspectionResultUpdated.InspectionResult.CreatededDate; EndorsementRequestNumber = $data.InspectionResultUpdated.InspectionResult.EndorsementRequestNumber; InspectionRequestNumber = $data.InspectionResultUpdated.InspectionResult.InspectionRequestNumber}
         
-        $extractedData.Add($var)
-
+        # null variable used to hide output to host
+        $extractedData.Add($var) >$null
     }
 
-    $extractedData | select CreatededDate, EndorsementRequestNumber, InspectionRequestNumber | export-csv -LiteralPath $outputFile -NoTypeInformation
+    $extractedData | Select-Object CreatededDate, EndorsementRequestNumber, InspectionRequestNumber | export-csv -LiteralPath $outputFile -NoTypeInformation
 }
