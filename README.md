@@ -25,3 +25,7 @@ This script extract data from XML files and add it to CSV file.
 . "full-path-to-the-file\extract-from-xml-2-csv.ps1"
 Read-Data -sourcePath "c:\Users\George\Downloads\1\" -outputFile "c:\Users\George\Downloads\1\exracted-data.csv"
 ```
+
+## Generate SQL Scripts
+
+This script generate SQL scripts for db objects like tables, views, user defined functions, ...
