@@ -29,3 +29,7 @@ Read-Data -sourcePath "c:\Users\George\Downloads\1\" -outputFile "c:\Users\Georg
 ## Generate SQL Scripts
 
 This script generate SQL scripts for db objects like tables, views, user defined functions, ...
+
+## Execute Multiple SQL Scripts
+
+This script loop over sql scripts files and execute them in order
