@@ -33,3 +33,7 @@ This script generate SQL scripts for db objects like tables, views, user defined
 ## Execute Multiple SQL Scripts
 
 This script loop over sql scripts files and execute them in order
+
+## remove bin and obj folders
+
+This script deletes bin and obj folders from all subfolders
