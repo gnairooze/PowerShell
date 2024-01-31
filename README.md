@@ -37,3 +37,15 @@ This script loop over sql scripts files and execute them in order
 ## remove bin and obj folders
 
 This script deletes bin and obj folders from all subfolders
+
+## count folders
+
+This script counts the number of folders created before certain date in a given path.
+
+## move folders
+
+This script moves folders created before certain date in a given path to another path.
+
+## read folders sizes
+
+This script reads the size of folders in a given path that were created before certain date and export the result to text file.
