@@ -1,3 +1,5 @@
+# copy files from a source directory to a destination directory based on the creation date of the files
+
 $sourcePath = "c:\uploads"
 $destinationPath = "C:\temp\1"
 $creationDate = Get-Date -Year 2024 -Month 3 -Day 15
