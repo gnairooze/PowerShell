@@ -1,10 +1,11 @@
 # calculate the total size of files created after a specific date in a directory
+# last write time is used instead of creation time because the creation time can be changed if the file copied from another location.
 
-$sourcePath = "c:\uploads"
-$creationDate = Get-Date -Year 2023 -Month 3 -Day 15
+$sourcePath = "c:\temp\1"
+$creationDate = Get-Date -Year 2024 -Month 7 -Day 10
 
 function Get-DirectorySize($source, $date) {
-    Get-ChildItem -Recurse $source | Where-Object { -not $_.PSIsContainer -and $_.CreationTime -gt $date } |
+    Get-ChildItem -Recurse $source | Where-Object { -not $_.PSIsContainer -and $_.LastWriteTime -lt $date } |
         Measure-Object -Sum -Property Length |
         Select-Object -ExpandProperty Sum
 }
