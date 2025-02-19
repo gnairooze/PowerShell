@@ -49,3 +49,6 @@ This script moves folders created before certain date in a given path to another
 ## read folders sizes
 
 This script reads the size of folders in a given path that were created before certain date and export the result to text file.
+
+## rename-files scripts
+1. contains a script `rename-files-making-last-numbers-4-digits.ps1` to rename files in a folder to have the last numbers 4 digits.
