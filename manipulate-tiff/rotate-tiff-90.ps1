@@ -3,7 +3,6 @@ Add-Type -AssemblyName System.Drawing
 
 # Configure paths
 $sourceDir = "g:\pdf-extract\1\"
-$outputDir = "c:\temp\1\"
 
 # Create output directory if missing
 if (-not (Test-Path $outputDir)) { New-Item -ItemType Directory -Path $outputDir | Out-Null }
