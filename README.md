@@ -54,6 +54,12 @@ This script reads the size of folders in a given path that were created before c
 
 1. contains a script `rename-files-making-last-numbers-4-digits.ps1` to rename files in a folder to have the last numbers 4 digits.
 
-## convert-tiff-to-jpg
+## manipulate-tiff
+
+### convert-tiff-to-jpg
 
 the script convert bulk tiff files to jpg files.
+
+### rotate-tiff-90
+
+the script rotate bulk tiff files 90 degrees.
